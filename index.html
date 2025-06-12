@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li>
+              <a href="#header"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfoilio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="coman">
+          <div class="header-text">
+            <p>Web Devloper</p>
+            <h1>
+              Hi, I'm <span>Pruthviraj </span> <br />
+              Chavan from India
+            </h1>
+          </div>
+          <div class="image">
+            <img
+              src="anime-style_male_character_with_black_background-removebg-preview.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--about seccison  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="anime-style_image_of_a_standing_male_developer_showcasing_his_skills_with_a_simple__dark_background__horizontally_long-removebg-preview.png"
+              alt="user"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I am Pruthviraj, a versatile and dedicated professional
+              with a passion for web development and creative problem-solving.
+              Over the years, I have honed my skills in frontend and backend
+              development, creating user-friendly and dynamic web applications.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience/Projects
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />Expertise in HTML, CSS,
+                  JavaScript, React, and Bootstrap.
+                </li>
+                <li>
+                  <span>Backend Development</span><br />Proficient in Node.js,
+                  Express.js, and Spring Boot.
+                </li>
+                <li>
+                  <span>Database Management</span><br />Designing Web/App
+                  interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Medi West: Reducing Medical Waste</span> A pioneering
+                  project dedicated to addressing medical waste management
+                  through sustainable solutions.
+                </li>
+                <li>
+                  <span>TaskConnect: Connecting for Small Jobs</span> A platform
+                  designed to connect people in need of small job services with
+                  service providers.
+                </li>
+                <li>
+                  <span>Gossip: A Safe Space for Girls</span>Overview: An
+                  exclusive platform for girls to connect, share, and support
+                  each other in a safe environment.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of tech in compute sci</span>from modern
+                  college,pune
+                </li>
+                <li><span>12th hsc</span>from DR.Babasaheb Ambedker</li>
+                <li><span>10th ssc</span>moder schoole,pune</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="services-list">
+          <div>
+            <h2>web Development</h2>
+            <p>
+              Front-End Development Technologies: HTML, CSS, JavaScript, React
+              Services: Building responsive and user-friendly web interfaces,
+              Single Page Applications (SPAs), and Progressive Web Apps
+              (PWAs).Back-End Development Technologies: Node.js, Express.js,
+              Java, Spring Boot Services: Developing robust server-side
+              applications, RESTful APIs, and integrating with databases.
+            </p>
+            <a href="https://www.w3schools.com/?form=MG0AV3">Learn more</a>
+          </div>
+          <div>
+            <h2>Full-Stack Development</h2>
+            <p>
+              Technologies: React, Node.js, Express.js, Java, Spring Boot,
+              MongoDB, PostgreSQL Services: End-to-end development of web
+              applications, from front-end design to back-end integration, and
+              database management.
+            </p>
+            <a href="https://nodejs.org/docs/latest/api/?form=MG0AV3"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <h2>Database Management</h2>
+            <p>
+              Technologies: MongoDB, PostgreSQL Services: Designing and managing
+              scalable databases, optimizing queries, and ensuring data security
+              and integrity
+            </p>
+            <a href="https://learn.mongodb.com/?form=MG0AV3">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---portfolio----- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="med-west.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Medi West: Reducing Medical Waste</h3>
+              <p>
+                A groundbreaking project aimed at revolutionizing medical waste
+                management through sustainable solutions. Role: Full-Stack
+                Developer Technologies: Java, Spring Boot, MongoDB, React
+                Impact: Enhanced sustainability in healthcare, reduced
+                environmental impact, and raised awareness about proper waste
+                management.
+              </p>
+              <a href="https://github.com/Pruthviraj21-master/jobs_done"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="TaskConnect.jpg" alt="" />
+
+            <div class="layer">
+              <h3>TaskConnect: Connecting for Small Jobs</h3>
+              <p>
+                A platform designed to connect people needing small job services
+                with local service providers. Role: Full-Stack Developer
+                Technologies: Node.js, Express.js, MongoDB, React, Stripe
+                Impact: Simplified job searching, empowered local workers, and
+                fostered community support.
+              </p>
+              <a href="https://www.linkedin.com/in/pruthviraj-chavan-294342310/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="gossip.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Gossip: A Safe Space for Girls</h3>
+              <p>
+                An exclusive platform for girls to connect, share, and support
+                each other in a safe environment. Role: Full-Stack Developer
+                Technologies: Node.js, Express.js, PostgreSQL, React Impact:
+                Established a supportive community, promoted positive
+                interactions, and provided valuable resources for girls.
+              </p>
+              <a
+                href="noblestitch.printify.me
+              "
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- --------contact------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i
+              ><br />chavanpruthviraj592@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i><br />7499817978</p>
+            <div class="social-icons">
+              <a href="https://www.youtube.com/channel/UCkIjvY34QrUsEre2xn3B9_A"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://www.instagram.com/pruthvirajchavan_21/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/feed/?legoTrackingToken=c34ZpnFFkTBxr71PqmgCc2UMfmlOrSdjtOoZsC5gr6litOoZp6Zdr6litOoVejAVejRApnhPpnlNpl9JtmUCjAZ9l4BjjR0Zuk9OpmhOjThBpShFtOpQrClQrCBvsClHpmlPnS9LqBYOtChxs6xzrDlxr3RAinhBpShFtOoMfmVLqnhFsSZgt6lDp6BT9z0Kc3RBsCZzkT9D9zROol1Ipl9OpOoZp6Zdr6lisCsCc3RKrSBQqndLk71RrT9D9zAVejAVfmhBt7dBtn5BkCRRjD1RrT9D9DhItm5CpmgZp4BMtmZOpOpejQBkildfk3RVgD9Bp79L9DhItm5CpmgZp4BQrClJpSlP9DhKpnhKqjRAinhLr7cCt6NRompBp3RAinhRrTBxr2oOtChxs6xzrDlxr3RBrm5epmtxs2pEt7tLsCsZp4BMs64CdPASe3sOfmh9rCZFsT9BtyoOej4McjoSczcNfmh9tioNoPdze68Opz5Ad3AJpjwSe2RzdjsQbm9CdCgJp64UejcMc3AZp4BQu6lQrCZz"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Pruthviraj21-master"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="Logo.png" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <!-- --------form-------- -->
+            <form
+              method="post"
+              action="https://formspree.io/f/xdkovdbj"
+              id="myForm"
+            >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+              />
+              <input
+                type="text"
+                placeholder="Phone no."
+                name="number"
+                id="number"
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                id="message"
+              ></textarea>
+              <button type="submit" class="btn btn2" id="submit">Submit</button>
+            </form>
+            <!-- <p id="successMessage" style="display: none; color: green">
+              Form Submitted successfully!
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright © 2024 Pruthviraj</div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4e203cee94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="backend.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
